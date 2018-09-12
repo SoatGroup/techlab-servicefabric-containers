@@ -2,17 +2,17 @@
 
 La liste des raccourcis VS Code est disponible pour [MacOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf) ou [Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf).
 
+## Initialiser le Workspace 
+
+Créer un nouveau dossier, et ouvrir celui-ci dans VS Code.
+
 ## Récupérer la solution via Github
 
-Il est possible de récupérer le code des containers à cette addresse :
+Récupérer le code des containers d'application à cette addresse :
 
 ```bash
 git clone https://github.com/SoatGroup/techlab-servicefabric-containers.git
 ```
-
-## Initialiser la solution 
-
-Créer un nouveau dossier, et ouvrir celui-ci dans VS Code.
 
 ### Générer l'application Service Fabric
 
@@ -24,7 +24,7 @@ Renseignez les paramètres suivants :
 * Application Template : **azuresfcontainer**
 * Name of your application : **Techlabs**
 * Name of the application service : **Back**
-* Input of the image name : **wilfriedwoivre/demo-servicefabric-back**
+* Input of the image name : **techlab-servicefabric-containers/demo-servicefabric-back**
 * Commands : 
 * Number of instances of guest container application : **-1**
 * Enter the container host mapping in the following format, container_port:host_port or press enter if not needed: **8080:8080**
@@ -47,13 +47,13 @@ Renseignez les paramètres suivants :
 * Application Template : **azuresfcontainer**
 * AddService
 * Name of the application service : **Front**
-* Input of the image name : **wilfriedwoivre/demo-servicefabric-front**
+* Input of the image name : **techlab-servicefabric-containers/demo-servicefabric-front**
 * Commands : 
 * Number of instances of guest container application : **-1**
 * Enter the container host mapping in the following format, container_port:host_port or press enter if not needed: **8000:80**
 
 ### Mettre en place le DNS du service Back 
-Dans le fichier **ApplicationManifest.xml**, ajouter le DNS pour le service Back comme ci-dessous : 
+Dans le fichier **Techlabs/ApplicationManifest.xml**, ajouter le DNS pour le service Back comme ci-dessous : 
 
 ```xml
   <DefaultServices>
