@@ -135,11 +135,15 @@ Il faut donc y modifier le certificat, le endpoint et le port (**19000**).
 }
 ```
 
+### Déployer l'application 
+
+Utiliser la commande **Service Fabric: Publish application** qui déploie votre application sur le cluster en se basant sur les fichiers **Cloud.json**, **install.ps1** et **uninstall.ps1**
+
 ### Vérifier votre déploiement
 
 *Le déploiement peut prendre quelques minutes*
 
-Allez sur l'url [https://lnx34397l57kh8.westus.cloudapp.azure.com:19080/Explorer/index.html](https://lnx34397l57kh8.westus.cloudapp.azure.com:19080/Explorer/index.html) (en fonction de votre cluter) afin que votre déploiement soit similaire à celui-ci : 
+Allez sur l'url [https://lnx34397l57kh8.westus.cloudapp.azure.com:19080/Explorer/index.html](https://lnx34397l57kh8.westus.cloudapp.azure.com:19080/Explorer/index.html) (en fonction de votre cluster) afin que votre déploiement soit similaire à celui-ci : 
 
 ![](assets/04-result.png)
 
