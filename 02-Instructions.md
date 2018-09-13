@@ -59,12 +59,12 @@ Dans le fichier **Techlabs/ApplicationManifest.xml**, ajouter le DNS pour le ser
   <DefaultServices>
     <!-- ADD SERVICE DNS NAME -->
     <Service Name="Back" ServiceDnsName="pythonback">
-      <StatelessService ServiceTypeName="BackType" InstanceCount="1">
+      <StatelessService ServiceTypeName="BackType" InstanceCount="-1">
         <SingletonPartition/>
       </StatelessService>
     </Service>
     <Service Name="Front">
-      <StatelessService ServiceTypeName="FrontType" InstanceCount="1">
+      <StatelessService ServiceTypeName="FrontType" InstanceCount="-1">
         <SingletonPartition/>
       </StatelessService>
     </Service>
